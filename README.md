@@ -1,33 +1,59 @@
-# superflux-bot
+# Telegram Support Bot
+This Bot is written in Python with the help from the pyTelegramBotAPI.
 
-This is simple REAFME
+Let's start by installing everything you need.
 
-THE SOURCE DEVELOPER BY @Mustafaflux ON Telegram 
+# Installation
 
-The Channel on telegram @MasterDev
+First of all, you need to install Python2 & the Python package manager
 
-<_>
-!
+```
+sudo apt-get install python2 python2-pip
+```
+
+After that you need to install the pyTelegramBotAPI.
+
+```
+sudo pip2 install pyTelegramBotAPI
+```
+Finally clone the repo
+
+```
+git clone https://github.com/appendhc/lsd_support_bot.clone
+```
+
+# Getting started
+
+Create 2 new files named "loggingids.json" and "user.txt"
+Open the file "bot.py" and replace following IDs with your options:
+
+```
+API_TOKEN = 'YOUR TOKEN'
+```
+This should be your Token received from Botfather.
+
+Also don't forget to replace the Group ID
 
 
-To install on C9 your next steps
 
-#Step1 : writ this > in Terminal 
-sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
+# Running the Bot
 
-#step2 : writ >
-git clone https://github.com/mustafaflux/superflux-bot.git
+You can one-time run the Bot with the command
+```
+python bot.py
+```
 
-#step3 : Writ >
-cd superflux-bot
+# Special thanks to
+[@aRandomStranger](https://telegram.me/aRandomStranger) - For soruce LoggingBot
 
-#step4 : Writ >
-./launch.sh install 
+[@Edurolp](https://telegram.me/edurolp) - For helping with Debugging
 
-(When the installation finishes)
+[@Gunny14](https://telegram.me/gunny14) - For helping users & being staff
 
-#step5 : Writ >
-./launch.sh 
+[@Sanguchi](https://telegram.me/Sanguchi) - For helping with Debugging, being staff & helping users
 
-Then ask You Number To put him Bot
-[[ If You Want install on VPS DO JUST From #step2 to #step5]]
+[@JackRendor](https://telegram.me/JackRendor) - For helping users & being staff
+
+[@eternnoir](https://github.com/eternnoir/pyTelegramBotAPI) - for creating this loveful API!
+
+
