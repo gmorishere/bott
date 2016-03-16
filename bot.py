@@ -34,7 +34,7 @@ def on_user_joins(m):
 				user.append(str(cid))
 				with open('chat.txt', 'a') as f:
 					f.write(str(cid)+"\n")
-			bot.send_message(cid, “Mamnun ke mano invite kardi vali man ye bot baraye hacke gta v online hastam va dar gp kare khasi nmitunam anjam bedam baraye fahmidane karhaye man /help ro vared kon. mamnun “)
+			bot.send_message(cid, "Mamnun ke mano invite kardi vali man ye bot baraye hacke gta v online hastam va dar gp kare khasi nmitunam anjam bedam baraye fahmidane karhaye man /help ro vared kon. mamnun ")
 			print "New group received."
 			userwhogotadded = m.new_chat_participant.first_name
 			username = m.new_chat_participant.username
@@ -45,32 +45,32 @@ def on_user_joins(m):
 
 
 
-@bot.message_handler(commands=[‘hackers’])
+@bot.message_handler(commands=['hackers√ï])
 def credits(m):
 	cid = m.chat.id
-	bot.send_message(cid, “@Ryangmorr \n @Gmorr”, parse_mode="Markdown")
+	bot.send_message(cid, "@Ryangmorr \n @Gmorr√ì, parse_mode="Markdown")
 
 @bot.message_handler(commands=['help'])
 def help(m):
 	cid = m.chat.id
-	bot.send_message(cid, “salam man bote hack baraye gta v online hastam \n baraye didane hacker ha /hackers ra vared konid \n baraye darkhaste hack /hack <joziate khastatun > ro vared konid \n baraye darkhaste account haye amade< /account amade >ra vared konid. batashkor. “, parse_mode="Markdown")
+	bot.send_message(cid, "salam man bote hack baraye gta v online hastam \n baraye didane hacker ha /hackers ra vared konid \n baraye darkhaste hack /hack <joziate khastatun > ro vared konid \n baraye darkhaste account haye amade< /account amade >ra vared konid. batashkor. ", parse_mode="Markdown")
 	
-@bot.message_handler(commands=[‘hack’])
+@bot.message_handler(commands=['hack√ï])
 def ask(m):
     tmt = m.from_user.id
     idA, cid = m.chat.id, m.chat.id
     str = m.text
-    txt = str.replace(“/hack“, "")
+    txt = str.replace("/hack", "")
     bot.send_message(idA, "<b>Joziate hacke darkhastie shoma:\n Darkhast:</b> {} \n<b>Chat-Id :</b> {} \n<b>.</b>".format(txt,idA), parse_mode="HTML")
     bot.send_message('-148999903', "<b>#NEW MSG\n Chat-Id:</b> {} \n<b>Msg :</b> {}".format(idA,txt), parse_mode="HTML")
     bot.send_message(idA, "<b>Our Admins Will Contact you soon. \n admin haye ma dar saritarin vaghte momken ba shona tamas khahand gereft.</b>", parse_mode="HTML")
 
-@bot.message_handler(commands=[‘account’])
+@bot.message_handler(commands=['account√ï])
 def ask(m):
     tmt = m.from_user.id
     idA, cid = m.chat.id, m.chat.id
     str = m.text
-    txt = str.replace(“/account“, "")
+    txt = str.replace("/account", "")
     bot.send_message(idA, "<b>SHOMA ACCOUNT E AMADE DARKHAST KARDID BA SHOMA TAMAS KHAHIM GEREFT.\n <b>Chat-Id :</b> {} \n<b>.</b>".format(txt,idA), parse_mode="HTML")
     bot.send_message('-148999903', "<b>#NEW MSG\n "username" \n Chat-Id:</b> {} \n<b>Msg :</b> {}".format(idA,txt), parse_mode="HTML")
     bot.send_message(idA, "<b>Our Admins Will Contact you soon. \n admin haye ma dar saritarin vaghte momken ba shona tamas khahand gereft.</b>", parse_mode="HTML")
@@ -188,10 +188,10 @@ def id(m):
     cid = m.chat.id
     uid = m.from_user.id
     if cid > 0:
-        bot.send_message( cid, “slm %s , idi khodet: %s.\n" %(m.from_user.first_name, cid))
+        bot.send_message( cid, "slm %s , idi khodet: %s.\n" %(m.from_user.first_name, cid))
         print "ID command received"
     else:
-        bot.send_message( cid, “slm %s , idi gp: %s.\n" %(m.from_user.first_name, cid))
+        bot.send_message( cid, "slm %s , idi gp: %s.\n" %(m.from_user.first_name, cid))
         print "ID command received"
 
 		
